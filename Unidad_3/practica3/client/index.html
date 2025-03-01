@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+ 
+    <div class="app">
+      <h1>Gestión de Pacientes</h1>
+
+      <!-- Formulario para agregar o actualizar pacientes -->
+      <form id="patient-form">
+        <h2>Crear / Actualizar Paciente</h2>
+        <input type="text" id="name" placeholder="Nombre" required />
+        <input type="number" id="age" placeholder="Edad" required />
+        <input type="number" id="weight" placeholder="Peso" required />
+        <input type="text" id="diagnosis" placeholder="Diagnóstico" required />
+        <button type="submit">Crear/Actualizar</button>
+      </form>
+
+      <!-- Formulario para buscar por ID -->
+      <h2>Buscar Paciente por ID</h2>
+      <form id="search-form">
+        <input type="text" id="search-id" placeholder="ID del Paciente" required />
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="search-result"></div>
+
+      <!-- Lista de pacientes -->
+      <h2>Lista de Pacientes</h2>
+      <ul id="patients-list"></ul>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
